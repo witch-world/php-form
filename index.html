@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>PHP Form</title>
+</head>
+<body>
+    <form class="form-layout" action="connect.php">
+        <h1 class="form-heading">Sign Up</h1>
+
+        <div class="f-row">
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName">
+        </div>
+
+        <div class="f-row">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName">
+        </div>
+
+        <div class="f-row">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        </div>
+
+        <div class="g-row">
+            <label class="g-heading" for="male">Select Gender</label>
+
+            <div class="gender">
+
+            <div class="g-radio">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+
+            <div class="g-radio">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+
+            <div class="g-radio">
+                <label for="others">Others</label>
+                <input type="radio" name="gender" id="others" value="others">
+            </div>
+        </div>
+        </div>
+
+        <div class="f-row">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        </div>
+
+        <div class="f-row">
+        <label for="confirmpassword">Confirm Password</label>
+        <input type="password" name="confirmpassword" id="confirmpassword">
+        </div>
+
+        <button class="submit-btn" type="submit">Submit</button>
+        
+    </form>
+</body>
+</html>
